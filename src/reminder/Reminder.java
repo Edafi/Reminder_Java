@@ -39,7 +39,7 @@ public abstract class Reminder{
         this.remind = in.nextLine();
     }
     public void setPriority(){
-        System.out.println("Insert a priority of the task");
+        System.out.println(ANSI_BLUE + "Insert a priority of the task" + ANSI_RESET);
         this.priority=in.nextInt();
     }
     public void timeLeft(){
@@ -63,7 +63,7 @@ public abstract class Reminder{
         System.out.println(this.remind);
     }
     public void printPriority(){
-        System.out.println("The priority is - " + this.priority);
+        System.out.println(ANSI_CYAN + "The priority is - " + this.priority + ANSI_RESET);
     }
     static class SortPriority implements Comparator<Reminder> {
         @Override

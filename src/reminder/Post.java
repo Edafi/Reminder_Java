@@ -45,7 +45,7 @@ public class Post extends Reminder{
                     break;
                 }
                 default:{
-                    System.out.println("Wrong input!");
+                    System.out.println(ANSI_RED + "Wrong input!" + ANSI_RESET);
                     break;
                 }
             }
