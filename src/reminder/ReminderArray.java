@@ -25,8 +25,9 @@ class ReminderArray{
         Collections.sort(array, new Reminder.SortIndex());
     }
     public void printArraySorted(){
+        int k=0;
         for(Reminder i : sortedArray){
-            int k=0;
+            System.out.println();
             System.out.println(ANSI_PURPLE + "Index is - " + ++k + ANSI_RESET);
             i.printPost();
         }
